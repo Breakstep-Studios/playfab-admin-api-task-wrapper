@@ -1,0 +1,17 @@
+{
+    "name": "com.breakstepstudios.playfab-admin-api-task-wrapper",
+    "version": "1.0.0",
+    "displayName": "PlayFab Admin API Task Wrapper",
+    "description": "Wraps the PlayFab admin API methods to return tasks instead of callback functions.",
+    "unity": "2018.4",
+    "keywords": ["playfab","admin","task", "async"],
+    "dependencies": {
+        "com.breakstepstudios.playfab-client-api-task-wrapper": "1.0.0"
+    },
+    "samples": [ ],
+    "author": {
+        "name": "Breakstep Studios",
+        "email": "support@breakstepstudios.com",
+        "url": "https://breakstepstudios.com"
+    }
+}

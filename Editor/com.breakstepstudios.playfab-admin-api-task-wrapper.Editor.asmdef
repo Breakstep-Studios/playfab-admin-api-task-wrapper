@@ -1,0 +1,17 @@
+{
+    "name": "com.breakstepstudios.playfab-admin-api-task-wrapper.Editor",
+    "references": [
+        "com.breakstepstudios.playfab-admin-api-task-wrapper",
+        "com.breakstepstudios.playfab-client-api-task-wrapper"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
