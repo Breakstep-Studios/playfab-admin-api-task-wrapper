@@ -47,3 +47,5 @@ public async PlayFabCommonResponse<GetTitleDataResult> GetTitleDataData()
     }
 }
 ```
+# TODO
+- [ ] This package currently relies on [playfab-admin-client-task-wrapper](https://github.com/Breakstep-Studios/playfab-client-api-task-wrapper). This dependency is only due to the fact that `playfab-client-api-task-wrapper` defines some data models this repo relies/will rely on. In the long run it would more beneficial to pull those data models in to a seperate repo that both the client & admin api rely on. For example something like `playfab-core-api-task-wrapper`.
