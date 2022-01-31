@@ -1,7 +1,9 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using PlayFab;
-using PlayFab.AdminModels;
 using ThomasBrown.PlayFab;
+#if ENABLE_PLAYFABADMIN_API
+using PlayFab.AdminModels;
+#endif
 
 namespace BreakstepStudios.Scripts.Runtime.PlayFab
 {
