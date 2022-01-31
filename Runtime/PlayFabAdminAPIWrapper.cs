@@ -7,6 +7,7 @@ namespace BreakstepStudios.Scripts.Runtime.PlayFab
 {
     public static class PlayFabAdminAPIWrapper
     {
+#if ENABLE_PLAYFABADMIN_API
         /// <inheritdoc cref="PlayFabAdminAPI.GetTitleData"/>
         public static Task<PlayFabCommonResponse<GetTitleDataResult>> GetTitleDataAsync(GetTitleDataRequest request)
         {
@@ -35,4 +36,5 @@ namespace BreakstepStudios.Scripts.Runtime.PlayFab
             return taskCompletionSource.Task;
         }
     }
+#endif
 }
