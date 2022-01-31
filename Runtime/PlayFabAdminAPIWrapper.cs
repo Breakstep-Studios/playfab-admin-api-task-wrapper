@@ -35,6 +35,6 @@ namespace BreakstepStudios.Scripts.Runtime.PlayFab
             });
             return taskCompletionSource.Task;
         }
-    }
 #endif
+    }
 }
