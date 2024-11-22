@@ -63,6 +63,20 @@ namespace BreakstepStudios.Scripts.Runtime.PlayFab
             });
             return taskCompletionSource.Task;
         }
+        
+        /// <inheritdoc cref="PlayFabAdminAPI.UpdateCatalogItems"/>
+        public static Task<PlayFabCommonResponse<UpdateCatalogItemsResult>> UpdateCatalogItemsAsync(UpdateCatalogItemsRequest request)
+        {
+            var taskCompletionSource = new TaskCompletionSource<PlayFabCommonResponse<UpdateCatalogItemsResult>>();
+            PlayFabAdminAPI.UpdateCatalogItems(request, (result) =>
+            {
+                taskCompletionSource.SetResult(new PlayFabCommonResponse<UpdateCatalogItemsResult>(result,null));
+            }, (error) =>
+            {
+                taskCompletionSource.SetResult(new PlayFabCommonResponse<UpdateCatalogItemsResult>(null, error));
+            });
+            return taskCompletionSource.Task;
+        }
 #endif
     }
 }
